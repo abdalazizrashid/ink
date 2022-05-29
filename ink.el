@@ -214,7 +214,7 @@ too.")
     (write-region ink-default-file nil file)
     (make-process :name "inksape"
                   :buffer log-buffer
-                  :command (list "inkscape" file)
+                  :command (list "open -a Inkscape" file)
                   :stderr log-buffer
                   :sentinel 'ink-sentinel)))
 
